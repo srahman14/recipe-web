@@ -1,0 +1,169 @@
+:root {
+    --nav-color: #08A045;
+    --text-color: #E8F1F2;
+    --link-color: #0B6E4F;
+    --hover-color: #6BBF59;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em;
+    background: var(--nav-color);
+    align-items: center;
+}
+
+nav .logo img {
+    width: 6.2em;
+    height: auto;
+    border-radius: 20px;
+}
+
+nav .search-bar {
+    background: #bebebe;
+    padding: 1em;
+    width: 8em;
+    text-align: center;
+    border-radius: 8px;
+}
+
+nav .menu-options ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    font-size: 1.4rem;
+    font-weight: bold;
+    list-style: none;
+}
+
+nav .menu-options ul li a {
+    text-decoration: none;
+    color: var(--text-color);   
+    transition: 1s ease-in-out;
+}
+
+nav .menu-options ul li a:hover {
+    text-decoration: none;
+    color: var(--hover-color);   
+    transition: 0.3s ease-out;
+}
+
+.container {
+    width: 100%;
+    max-width: clamp(320px, 90%, 1600px); 
+    margin-inline: auto;                 
+    padding-inline: 1rem;  
+}
+
+/* Hero section */
+.hero {
+    background-image: url('/assets/images/landing-section-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    
+}
+
+.landing-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.landing-content h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 700;
+    margin-bottom: 20px;    
+}
+.landing-content .landing-buttons a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--link-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s ease-in;
+  }
+  
+  .landing-content a:hover {
+    background-color: #6BBF59;
+    transition: background 0.2s ease-out;
+  }
+
+/* Popular Recipes */
+.popular-recipes {
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: center; */
+}
+
+.popular-recipes h2 {
+    margin-top: 4em;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.popular-recipes .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1em;
+    margin: 2em;
+    align-content: center;
+}
+
+.grid-container .card {
+    background: #6BBF59;
+    padding: 1em;
+    border-radius: 8px;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.grid-container .card:hover {
+    background: #6BBF59;
+    opacity: 0.9;
+    transition: 0.3s ease-in-out;
+    transform: translateY(-2.3px);
+}
+
+.grid-container .card p {
+    font-weight: 500;
+}
+
+/* Categories section */
+.categories {
+    background: #08A045;
+}
