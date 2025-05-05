@@ -23,7 +23,7 @@
             <div class="menu-options">
                 <ul>
                     <li><a href="#" target="_blank" rel="noopener noreferrer">Home</a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer">Recipe</a></li>
+                    <li><a href="#" target="_blank" rel="noopener noreferrer">Recipes</a></li>
                     <li><a href="#" target="_blank" rel="noopener noreferrer">Login</a></li>
                 </ul>
             </div>
@@ -33,6 +33,7 @@
                 <p>search</p>
             </div>
         </nav>
+    </header>
         
         <main>
             <!--Hero Section -->
@@ -47,9 +48,10 @@
             </section>
 
             <!--Most popular recipes section -->
-            <section>
+            <section class="popular-recipes-section">
                 <div class="container popular-recipes">
                     <h2>Most popular recipes</h2>
+                    <p>Here are some of our most popular recipes here on Recipy:</p>
                     <div class="grid-container">
                         <div class="card">
                             <h3>name of dish</h3>
@@ -99,26 +101,55 @@
                 </div>
             </section>
             <!--Categories Section -->
-            <section>
-                <div class="container categories">
+            <section class="category-section">
+                <div class="container category-cards">
                     <!--Different categories displayed as cards -->
                     <!--Clicking on these cards redirects to filtered view on recipe page -->
-                    <h2>categories</h2>
-                    <div class="card">
-                        <a href="#" target="_blank" rel="noopener noreferrer">In season</a>    
-                    </div>
+                    <h2>Categories</h2>
+                    <p>Click to access any category of your liking instantly:</p>
+                    <div class="flex-container">
+                        <div class="card">
+                            <a href="#" target="_blank" rel="noopener noreferrer">In season</a>    
+                        </div>
+    
+                        <div class="card">
+                            <a href="#" target="_blank" rel="noopener noreferrer">Occasions</a>    
+                        </div>
+    
+                        <div class="card">
+                            <a href="#" target="_blank" rel="noopener noreferrer">Cuisines</a>    
+                        </div>
 
-                    <div class="card">
-                        <a href="#" target="_blank" rel="noopener noreferrer">Occasions</a>    
-                    </div>
+                        <div class="card">
+                            <a href="#" target="_blank" rel="noopener noreferrer">Halal</a>    
+                        </div>
 
-                    <div class="card">
-                        <a href="#" target="_blank" rel="noopener noreferrer">Cuisines</a>    
+                        <div class="card">
+                            <a href="#" target="_blank" rel="noopener noreferrer">Random</a>    
+                        </div>
                     </div>
                 </div>
             </section>
 
+            <!-- Testimonials section -->
+            <section class="testimonials-section">
+                <div class="container testimonials-container">
+                    <div class="testimonials-bg"></div>
+                    <div class="testimonials-content">
+                        <h2>Testimonials</h2>
+                        <p>Here are what some of our current users say:</p>
+                        
 
+                        <blockquote class="card">
+                            <img src="/assets/images/quotation-marks.svg" alt="quotation-marks">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus inventore aperiam possimus nostrum. Laborum earum veritatis porro culpa maiores asperiores cupiditate magnam rerum sit facere.</p>
+                            <p>name</p>
+                            <p>country, city</p>
+                            <p>5 stars</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </section>
             <!--Subcribe to our email list -->
             <p>Subscribe to our email list</p>
 
@@ -145,6 +176,5 @@
                 </div>
             </footer>
         </main>
-    </header>
 </body>
 </html>
